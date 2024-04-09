@@ -15,5 +15,5 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '11'
-    - name: build and test with maven
-      run: mvn clean test
+    - name: mvn clean test
+      run: mvn -B package --file pom.xml

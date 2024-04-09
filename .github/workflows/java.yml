@@ -6,12 +6,9 @@ on:
   pull_request:
     branches: ["main"]
 
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 11
@@ -20,4 +17,10 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: mvn clean test
-      run: mvn -B package --file pom.xml
+      run: |
+        mvn -B package --file pom.xml > build_log.txt
+    - name: build log
+      uses: actions/upload-artifact@v2
+      with:
+        name: build-log
+        path: build_log.txt

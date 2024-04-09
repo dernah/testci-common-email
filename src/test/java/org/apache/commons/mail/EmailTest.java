@@ -130,6 +130,7 @@ public class EmailTest {
 		// I still need to fix this function to cover all JUnit test cases.
 
 		// I REALLY need to fix this function to cover all JUnit test cases.
+		//Testing with build log
 	    
 	}
 	

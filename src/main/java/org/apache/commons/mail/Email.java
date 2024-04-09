@@ -1254,7 +1254,7 @@ public abstract class Email
      * @throws EmailException if there was an error.
      * @since 1.0
      */
-    public void buildMimeMessage() throws EmailException
+    public void buildMimeMessage() throws EmailException // The coverage is lacking in this function.
     {
         if (this.message != null)
         {

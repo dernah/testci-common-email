@@ -125,6 +125,9 @@ public class EmailTest {
 	    
 	    assertEquals("Example Subject", email.getSubject());
 	    assertNotNull("Expected non-null", email.getMimeMessage()); // Make comparisons
+
+
+		// I still need to fix this function to cover all JUnit test cases.
 	    
 	}
 	
